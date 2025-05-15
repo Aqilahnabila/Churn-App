@@ -12,7 +12,7 @@ Customer Churn App adalah aplikasi berbasis web menggunakan Streamlit yang bertu
 ## Cara Menjalankan Program
 ------------------------
 1. Clone repositori ini dari GitHub:
-   **git clone https://github.com/username/nama-repo.git**
+   **git clone https://github.com/Aqilahnabila/Churn-App.git**
    **cd nama-repo**
 3. pip install -r requirements.txt 
 4. Jalankan aplikasi dengan perintah berikut di terminal atau command prompt:
