@@ -3,12 +3,12 @@
 Customer Churn App adalah aplikasi berbasis web menggunakan Streamlit yang bertujuan untuk memprediksi pelanggan yang kemungkinan akan berhenti berlangganan (churn). Aplikasi ini memungkinkan pengguna untuk mengunggah data pelanggan dalam format CSV, lalu melakukan prediksi dengan model machine learning yang telah dilatih. Selain itu, aplikasi menyajikan visualisasi distribusi churn, analisis fitur yang memengaruhi churn, dan memberikan rekomendasi strategi retensi.
 
 ## 🚀 Fitur Utama:
-📂 Upload file data pelanggan (.csv) sesuai dengan template dataset yang tersedia di repository
-📊 Prediksi status churn menggunakan model Random Forest terlatih
-📥 Download hasil prediksi churn dalam bentuk file CSV
-📈 Visualisasi distribusi churn (prediksi churn keseluruhan)
-🧩 Analisis fitur terhadap churn secara individual
-💡 Rekomendasi strategi retensi berdasarkan kontribusi fitur terhadap churn
+- 📂 Upload file data pelanggan (.csv) sesuai dengan template dataset yang tersedia di repository
+- 📊 Prediksi status churn menggunakan model Random Forest terlatih
+- 📥 Download hasil prediksi churn dalam bentuk file CSV
+- 📈 Visualisasi distribusi churn (prediksi churn keseluruhan)
+- 🧩 Analisis fitur terhadap churn secara individual
+- 💡 Rekomendasi strategi retensi berdasarkan kontribusi fitur terhadap churn
 
 ##🛠️ Cara Menjalankan Program
 ------------------------
