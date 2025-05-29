@@ -34,7 +34,7 @@ Customer Churn App adalah aplikasi berbasis web menggunakan Streamlit yang bertu
 - Gunakan file dataset_template.csv sebagai acuan. Pastikan tidak ada kolom tambahan, nama kolom salah, atau urutan tidak sesuai.
 - Contoh kolom yang umum digunakan:
 | gender | SeniorCitizen | tenure | MonthlyCharges | Contract | ... |
-| ------ | ------------- | ------ | -------------- | -------- | --- |
+
 ⛔ Jika format tidak sesuai, proses prediksi tidak akan berjalan dan aplikasi akan menampilkan peringatan.
 
 ## ℹ️ Informasi Tambahan
