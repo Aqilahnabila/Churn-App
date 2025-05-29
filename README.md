@@ -25,7 +25,7 @@ Customer Churn App adalah aplikasi berbasis web menggunakan Streamlit yang bertu
 - file berikut harus tersedia dalam satu folder:
     - `app.py`               : File utama aplikasi Streamlit
     - `model.pkl`            : File model machine learning (Random Forest) yang sudah dilatih
-    - `Data`                 : File data csv
+    - `Data.csv`             : File data csv
     - `requirements.txt`     : Daftar library yang dibutuhkan
 
 ## 📊 Format Data Input
