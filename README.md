@@ -10,7 +10,7 @@ Customer Churn App adalah aplikasi berbasis web menggunakan Streamlit yang bertu
 - 🧩 Analisis fitur terhadap churn secara individual
 - 💡 Rekomendasi strategi retensi berdasarkan kontribusi fitur terhadap churn
 
-##🛠️ Cara Menjalankan Program
+## 🛠️ Cara Menjalankan Program
 ------------------------
 1. Clone repositori ini dari GitHub:
 
