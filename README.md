@@ -40,6 +40,7 @@ Customer Churn App adalah aplikasi berbasis web menggunakan Streamlit yang bertu
 
 ## ℹ️ Informasi Tambahan
 ------------------
+- Informasi dataset dapat diakses pada file 'Metadata Churn-App' pada repository.
 - Model machine learning yang digunakan adalah Random Forest Classifier.
 - Model telah dilatih sebelumnya menggunakan dataset pelanggan (Data Telco tanpa encode.csv).
 - File model.pkl disimpan menggunakan library joblib.
