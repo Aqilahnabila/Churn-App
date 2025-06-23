@@ -1,5 +1,8 @@
+# ================================================================
+# Customer Churn Analysis App
 # Copyright (c) 2025 Aqilah, Sun Kayla, Abida, Giselle, Adinda
-# This software is licensed under the MIT License.
+# Licensed under the MIT License (see LICENSE file for details)
+# ================================================================
 
 import streamlit as st
 import pandas as pd
