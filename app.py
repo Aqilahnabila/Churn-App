@@ -23,6 +23,7 @@ Pastikan data pelanggan yang anda upload mengikuti format yang sesuai.
 📄 Jika anda belum punya data pelanggan sendiri atau ingin contoh format yang benar:
 - Gunakan **template CSV** yang sudah disediakan.
 - Atau coba terlebih dahulu dengan **data contoh** yang ada di folder GitHub kami.
+""")
 
 col1, col2 = st.columns(2)
 with col1:
@@ -40,7 +41,7 @@ with col2:
             data=file,
             file_name="data_contoh.csv",
             mime="text/csv"
-        )""")
+        )
 
 # Fungsi load model
 @st.cache_resource
