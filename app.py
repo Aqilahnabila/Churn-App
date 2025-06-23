@@ -32,7 +32,7 @@ with col1:
             label="⬇️ Download Template CSV",
             data=file,
             file_name="dataset_template.csv",
-            mime="text/csv"
+            mime="text/csv",
             use_container_width=True
         )
 with col2:
@@ -41,7 +41,7 @@ with col2:
             label="⬇️ Download Data Contoh",
             data=file,
             file_name="Data trial 1.csv",
-            mime="text/csv"
+            mime="text/csv",
             use_container_width=True
         )
 
