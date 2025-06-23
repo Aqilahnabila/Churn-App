@@ -1,8 +1,9 @@
+# Copyright (c) 2025 Aqilah, Sun Kayla, Abida, Giselle, Adinda
+# This software is licensed under the MIT License.
+
 #!/usr/bin/env python
 # coding: utf-8
-
 # In[7]:
-
 
 # 1. Import Library
 import pandas as pd
