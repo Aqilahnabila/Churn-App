@@ -27,19 +27,19 @@ Pastikan data pelanggan yang anda upload mengikuti format yang sesuai.
 
 col1, col2 = st.columns(2)
 with col1:
-    with open("data/template_churn.csv", "rb") as file:
+    with open("dataset_template.csv", "rb") as file:
         st.download_button(
             label="⬇️ Download Template CSV",
             data=file,
-            file_name="template_churn.csv",
+            file_name="dataset_template.csv",
             mime="text/csv"
         )
 with col2:
-    with open("data/data_contoh.csv", "rb") as file:
+    with open("Data/Data trial 1.csv", "rb") as file:
         st.download_button(
             label="⬇️ Download Data Contoh",
             data=file,
-            file_name="data_contoh.csv",
+            file_name="Data trial 1.csv",
             mime="text/csv"
         )
 
