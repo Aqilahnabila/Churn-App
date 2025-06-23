@@ -17,63 +17,94 @@ st.set_page_config(page_title="Customer Churn App", layout="wide")
 
 # Custom CSS Styling
 st.markdown("""
-    <style>
-    body {
-        background-color: white;
-    }
+<style>
+/* ========== UMUM ========== */
+body {
+    background-color: white;
+}
 
-    /* Header besar */
-    .st-emotion-cache-10trblm, .st-emotion-cache-1avcm0n, h1 {
-        color: #b30000;
-        font-weight: bold;
-    }
+/* Header Utama (Judul Aplikasi) */
+h1 {
+    background-color: #b30000;
+    color: white !important;
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
 
-    /* Header langkah */
-    h2 {
-        color: #b30000 !important;
-        font-weight: bold !important;
-        border-bottom: 2px solid #b30000;
-        padding-bottom: 0.2em;
-    }
+/* Header Langkah (1️⃣, 2️⃣, dst.) dengan Background Merah */
+h2 {
+    background-color: #b30000;
+    color: white !important;
+    padding: 0.6em 1em;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(179, 0, 0, 0.25);
+}
 
-    /* Label dropdown */
-    label[data-baseweb="select"] {
-        background-color: #b30000;
-        color: white;
-        padding: 0.25em;
-        border-radius: 5px;
-    }
+/* Box Info (st.info) */
+.stAlert[data-testid="stAlert"] {
+    background-color: #fff5f5;  /* merah muda terang */
+    border-left: 6px solid #b30000;
+    border-radius: 5px;
+    padding: 1em;
+}
 
-    /* File uploader */
-    section[data-testid="stFileUploader"] {
-        border: 2px dashed #b30000;
-        background-color: #fff5f5;
-    }
+.stAlert p {
+    color: #4d0000; /* merah gelap */
+    font-weight: 500;
+}
 
-    /* Download button */
-    .stDownloadButton > button {
-        background-color: #b30000;
-        color: white;
-        font-weight: bold;
-        border-radius: 8px;
-    }
+/* Label Dropdown */
+label[data-baseweb="select"] {
+    background-color: #b30000;
+    color: white;
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
-    .stDownloadButton > button:hover {
-        background-color: #800000;
-    }
+/* Selectbox pilihan fitur */
+div[data-baseweb="select"] > div {
+    background-color: #b30000 !important;
+    color: white !important;
+    font-weight: bold;
+}
 
-    /* Selectbox (dropdown fitur) */
-    div[data-baseweb="select"] > div {
-        background-color: #b30000 !important;
-        color: white !important;
-    }
+/* File Uploader */
+section[data-testid="stFileUploader"] {
+    border: 2px dashed #b30000;
+    background-color: #fff5f5;
+    padding: 1em;
+    border-radius: 5px;
+}
 
-    /* Tabel hasil prediksi */
-    .stDataFrame {
-        border: 2px solid #b30000;
-    }
+/* Tombol Download */
+.stDownloadButton > button {
+    background-color: #b30000;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
 
-    </style>
+.stDownloadButton > button:hover {
+    background-color: #800000;
+}
+
+/* Tabel Prediksi */
+.stDataFrame {
+    border: 2px solid #b30000;
+    border-radius: 5px;
+}
+
+</style>
 """, unsafe_allow_html=True)
 
 st.title("📊 Aplikasi Analisis Retensi Pelanggan")
