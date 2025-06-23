@@ -31,13 +31,13 @@ h1 {
     border-radius: 12px;
     font-size: 34px;
     text-align: center;
-    margin: 1.5em 0 1em 0;  /* ↑↓ spasi atas bawah */
+    margin: 1.5em 0 1em 0;
     font-weight: bold;
 }
 
 /* Box Info (st.info) */
 .stAlert[data-testid="stAlert"] {
-    background-color: #fff5f5;  /* merah muda terang */
+    background-color: #fff0f0;
     border-left: 6px solid #b30000;
     border-radius: 8px;
     padding: 1.2em;
@@ -48,7 +48,7 @@ h1 {
 .stAlert p {
     color: #4d0000;
     font-weight: 500;
-    line-height: 1.6;  /* memperlebar antar baris */
+    line-height: 1.6;
 }
 
 /* Header Langkah (1️⃣, 2️⃣, dst.) */
@@ -58,6 +58,15 @@ h2 {
     border-bottom: 2px solid #b30000;
     padding-bottom: 0.3em;
     margin-top: 2em;
+    margin-bottom: 0.8em;
+}
+
+/* Subjudul tambahan (cth: Pilih fitur, rekomendasi strategi) */
+.stMarkdown > p:first-of-type, .stMarkdown p {
+    font-size: 17px;
+    color: #4d0000;
+    font-weight: 600;
+    margin-top: 0.5em;
     margin-bottom: 0.8em;
 }
 
@@ -100,11 +109,48 @@ section[data-testid="stFileUploader"] {
     background-color: #800000;
 }
 
-/* Tabel Prediksi */
-.stDataFrame {
-    border: 2px solid #b30000;
-    border-radius: 5px;
+/* =========================== */
+/* Styling Tabel Prediksi Churn */
+/* =========================== */
+div[data-testid="stDataFrame"] {
+    border: 1px solid #b30000;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 1em;
     margin-bottom: 2em;
+}
+
+/* Tabel dalam DataFrame */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+thead th {
+    background-color: #b30000;
+    color: white;
+    font-weight: bold;
+    padding: 0.6em;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+tbody td {
+    border: 1px solid #ffd6d6;
+    padding: 0.55em 0.6em;
+    text-align: left;
+}
+
+/* Zebra stripes */
+tbody tr:nth-child(even) {
+    background-color: #fff5f5;
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #ffeaea;
+    transition: background-color 0.2s ease-in-out;
 }
 </style>
 """, unsafe_allow_html=True)
