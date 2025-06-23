@@ -13,54 +13,63 @@ import os
 from sklearn.preprocessing import LabelEncoder
 
 def custom_css():
-     <style>
-        /* Latar belakang putih */
-        .stApp {
-            background-color: white;
-        }
+     st.markdown("""
+    <style>
+    body {
+        background-color: white;
+    }
 
-        /* Header utama */
-        h1 {
-            color: #B00020;
-            font-weight: bold;
-        }
+    /* Header besar */
+    .st-emotion-cache-10trblm, .st-emotion-cache-1avcm0n, h1 {
+        color: #b30000;
+        font-weight: bold;
+    }
 
-        /* Header langkah (Upload, Prediksi, dll) */
-        h2, .st-emotion-cache-1avcm0n, .st-emotion-cache-10trblm, .stMarkdown h2 {
-            background-color: #B00020;
-            color: white !important;
-            padding: 0.5rem;
-            border-radius: 5px;
-            font-size: 1.1rem;
-        }
+    /* Header langkah (misalnya 1️⃣ Upload Data Pelanggan) */
+    .st-emotion-cache-1v0mbdj h2 {
+        background-color: #b30000;
+        color: white;
+        padding: 0.5em;
+        border-radius: 5px;
+        font-size: 22px;
+    }
 
-        /* Judul sub bagian rekomendasi dan analisis fitur */
-        .stMarkdown h3 {
-            color: #B00020;
-            font-weight: bold;
-        }
+    /* Label dropdown */
+    label[data-baseweb="select"] {
+        background-color: #b30000;
+        color: white;
+        padding: 0.25em;
+        border-radius: 5px;
+    }
 
-        /* Dropdown dan tombol */
-        .stSelectbox > div, .stDownloadButton button, .stFileUploader, .stButton button {
-            background-color: #B00020 !important;
-            color: white !important;
-            border: none;
-            border-radius: 5px;
-        }
+    /* File uploader */
+    section[data-testid="stFileUploader"] {
+        border: 2px dashed #b30000;
+        background-color: #fff5f5;
+    }
 
-        /* Tabel */
-        .stDataFrame, .stTable {
-            border: 1px solid #B00020;
-        }
+    /* Download button */
+    .stDownloadButton > button {
+        background-color: #b30000;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+    }
 
-        /* Label di atas file uploader */
-        .st-emotion-cache-1fcbk6n {
-            font-weight: bold;
-            color: #B00020;
-        }
+    /* Selectbox (dropdown fitur) */
+    div[data-baseweb="select"] > div {
+        background-color: #b30000 !important;
+        color: white !important;
+    }
+
+    /* Tabel hasil prediksi */
+    .stDataFrame {
+        border: 2px solid #b30000;
+    }
+
     </style>
 """, unsafe_allow_html=True)
-
+     
 custom_css()
 
 # Konfigurasi halaman
