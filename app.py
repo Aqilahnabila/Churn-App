@@ -27,38 +27,38 @@ body {
 h1 {
     background-color: #b30000;
     color: white !important;
-    padding: 0.7em 1em;
-    border-radius: 10px;
-    font-size: 32px;
+    padding: 0.8em 1em;
+    border-radius: 12px;
+    font-size: 34px;
     text-align: center;
-    margin-bottom: 0.5em;
+    margin: 1.5em 0 1em 0;  /* ↑↓ spasi atas bawah */
     font-weight: bold;
-}
-
-/* Header Langkah (1️⃣, 2️⃣, dst.) dengan Background Merah */
-h2 {
-    background-color: #b30000;
-    color: white !important;
-    padding: 0.6em 1em;
-    border-radius: 10px;
-    font-size: 20px;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-    box-shadow: 2px 2px 5px rgba(179, 0, 0, 0.25);
 }
 
 /* Box Info (st.info) */
 .stAlert[data-testid="stAlert"] {
     background-color: #fff5f5;  /* merah muda terang */
     border-left: 6px solid #b30000;
-    border-radius: 5px;
-    padding: 1em;
+    border-radius: 8px;
+    padding: 1.2em;
+    margin-bottom: 1.5em;
+    margin-top: 0.8em;
 }
 
 .stAlert p {
-    color: #4d0000; /* merah gelap */
+    color: #4d0000;
     font-weight: 500;
+    line-height: 1.6;  /* memperlebar antar baris */
+}
+
+/* Header Langkah (1️⃣, 2️⃣, dst.) */
+h2 {
+    color: #b30000 !important;
+    font-weight: bold !important;
+    border-bottom: 2px solid #b30000;
+    padding-bottom: 0.3em;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
 }
 
 /* Label Dropdown */
@@ -82,7 +82,8 @@ section[data-testid="stFileUploader"] {
     border: 2px dashed #b30000;
     background-color: #fff5f5;
     padding: 1em;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
 }
 
 /* Tombol Download */
@@ -92,6 +93,7 @@ section[data-testid="stFileUploader"] {
     font-weight: bold;
     border-radius: 8px;
     transition: 0.3s ease;
+    margin-top: 0.5em;
 }
 
 .stDownloadButton > button:hover {
@@ -102,8 +104,8 @@ section[data-testid="stFileUploader"] {
 .stDataFrame {
     border: 2px solid #b30000;
     border-radius: 5px;
+    margin-bottom: 2em;
 }
-
 </style>
 """, unsafe_allow_html=True)
 
