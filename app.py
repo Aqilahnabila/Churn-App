@@ -22,7 +22,8 @@ Pastikan data pelanggan yang anda upload mengikuti format yang sesuai.
 
 📄 Jika anda belum punya data pelanggan sendiri atau ingin contoh format yang benar:
 - Gunakan **template CSV** yang sudah disediakan.
-- Atau coba terlebih dahulu dengan **data contoh** yang ada di folder GitHub kami.
+- Apabila diperlukan, coba terlebih dahulu dengan **data contoh** yang ada di folder GitHub kami atau dapat pula diunduh pada tombol dibawah ini.
+
 """)
 
 col1, col2 = st.columns(2)
