@@ -18,14 +18,14 @@ st.title("📊 Aplikasi Analisis Retensi Pelanggan")
 
 st.info("""
 ⚠️ **Perhatian:**  
-Pastikan data pelanggan yang kamu upload mengikuti format yang sesuai.
+Pastikan data pelanggan yang anda upload mengikuti format yang sesuai.
 
-📄 Jika kamu belum punya data pelanggan sendiri atau ingin contoh format yang benar:
+📄 Jika anda belum punya data pelanggan sendiri atau ingin contoh format yang benar:
 - Gunakan **template CSV** yang sudah disediakan.
-- Atau coba dulu dengan **data contoh** yang ada di folder GitHub kami.
+- Atau coba terlebih dahulu dengan **data contoh** yang ada di folder GitHub kami.
 
-📥 [Klik di sini untuk download Template CSV](https://raw.githubusercontent.com/NAMA_USERNAME/NAMA_REPO/main/data/template_churn.csv)
-📥 [Download Contoh Data Pelanggan](https://raw.githubusercontent.com/NAMA_USERNAME/NAMA_REPO/main/data/data_contoh.csv)
+📥 [Klik di sini untuk download Template CSV](https://raw.githubusercontent.com/Aqilahnabila/Churn-App/refs/heads/main/dataset_template.csv)
+📥 [Download Contoh Data Pelanggan](https://raw.githubusercontent.com/Aqilahnabila/Churn-App/refs/heads/main/Data/Data%20trial%201.csv)
 """)
 
 # Fungsi load model
