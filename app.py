@@ -12,8 +12,11 @@ import seaborn as sns
 import os
 from sklearn.preprocessing import LabelEncoder
 
-def custom_css():
-     st.markdown("""
+# Konfigurasi halaman
+st.set_page_config(page_title="Customer Churn App", layout="wide")
+
+# Custom CSS Styling
+st.markdown("""
     <style>
     body {
         background-color: white;
@@ -69,11 +72,7 @@ def custom_css():
 
     </style>
 """, unsafe_allow_html=True)
-     
-custom_css()
 
-# Konfigurasi halaman
-st.set_page_config(page_title="Customer Churn App", layout="wide")
 st.title("📊 Aplikasi Analisis Retensi Pelanggan")
 
 st.info("""
