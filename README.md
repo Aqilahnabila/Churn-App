@@ -51,3 +51,10 @@ Customer Churn App adalah aplikasi berbasis web menggunakan Streamlit yang bertu
 - Model telah dilatih sebelumnya menggunakan dataset pelanggan (Data Telco tanpa encode.csv).
 - File model.pkl disimpan menggunakan library joblib.
 - Aplikasi dapat berjalan secara lokal tanpa koneksi internet, selama dependensi telah diinstal.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+© 2025 Aqilah, Sun Kayla, Abida, Giselle, Adinda. All rights reserved.
+
