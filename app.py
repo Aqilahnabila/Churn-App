@@ -33,6 +33,7 @@ with col1:
             data=file,
             file_name="dataset_template.csv",
             mime="text/csv"
+            use_container_width=True
         )
 with col2:
     with open("Data/Data trial 1.csv", "rb") as file:
@@ -41,6 +42,7 @@ with col2:
             data=file,
             file_name="Data trial 1.csv",
             mime="text/csv"
+            use_container_width=True
         )
 
 # Fungsi load model
