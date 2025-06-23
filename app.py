@@ -1,3 +1,6 @@
+# Copyright (c) 2025 Aqilah, Sun Kayla, Abida, Giselle, Adinda
+# This software is licensed under the MIT License.
+
 import streamlit as st
 import pandas as pd
 import joblib
