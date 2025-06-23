@@ -24,9 +24,23 @@ Pastikan data pelanggan yang anda upload mengikuti format yang sesuai.
 - Gunakan **template CSV** yang sudah disediakan.
 - Atau coba terlebih dahulu dengan **data contoh** yang ada di folder GitHub kami.
 
-📥 [Klik di sini untuk download Template CSV](https://raw.githubusercontent.com/Aqilahnabila/Churn-App/refs/heads/main/dataset_template.csv)
-📥 [Download Contoh Data Pelanggan](https://raw.githubusercontent.com/Aqilahnabila/Churn-App/refs/heads/main/Data/Data%20trial%201.csv)
-""")
+col1, col2 = st.columns(2)
+with col1:
+    with open("data/template_churn.csv", "rb") as file:
+        st.download_button(
+            label="⬇️ Download Template CSV",
+            data=file,
+            file_name="template_churn.csv",
+            mime="text/csv"
+        )
+with col2:
+    with open("data/data_contoh.csv", "rb") as file:
+        st.download_button(
+            label="⬇️ Download Data Contoh",
+            data=file,
+            file_name="data_contoh.csv",
+            mime="text/csv"
+        )""")
 
 # Fungsi load model
 @st.cache_resource
