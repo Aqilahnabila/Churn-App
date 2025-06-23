@@ -13,48 +13,53 @@ import os
 from sklearn.preprocessing import LabelEncoder
 
 def custom_css():
-    st.markdown("""
-        <style>
+     <style>
+        /* Latar belakang putih */
         .stApp {
-            background-color: #2D1B4E;
+            background-color: white;
         }
-        h1, h2, h3, h4, .st-emotion-cache-10trblm, .st-emotion-cache-1avcm0n {
-            color: white !important;
-        }
-        .stDownloadButton > button {
-            background-color: #B00020;
-            color: white;
-            border: none;
+
+        /* Header utama */
+        h1 {
+            color: #B00020;
             font-weight: bold;
         }
-        .stDownloadButton > button:hover {
-            background-color: #D32F2F;
-            color: white;
+
+        /* Header langkah (Upload, Prediksi, dll) */
+        h2, .st-emotion-cache-1avcm0n, .st-emotion-cache-10trblm, .stMarkdown h2 {
+            background-color: #B00020;
+            color: white !important;
+            padding: 0.5rem;
+            border-radius: 5px;
+            font-size: 1.1rem;
         }
-        .stDataFrame, .stTable, .element-container table {
-            background-color: white;
-            color: black;
-            border-radius: 10px;
+
+        /* Judul sub bagian rekomendasi dan analisis fitur */
+        .stMarkdown h3 {
+            color: #B00020;
+            font-weight: bold;
         }
-        .stFileUploader > div {
-            background-color: #ffffff;
-            color: #000;
-            border: 2px dashed #B00020;
-            border-radius: 10px;
-        }
-        .stAlert {
-            background-color: #f2f2f2;
-            color: black;
-        }
-        .css-1r6slb0, .css-1aumxhk {
+
+        /* Dropdown dan tombol */
+        .stSelectbox > div, .stDownloadButton button, .stFileUploader, .stButton button {
             background-color: #B00020 !important;
             color: white !important;
-            font-weight: bold;
+            border: none;
             border-radius: 5px;
-            padding: 0.3em 0.8em;
         }
-        </style>
-    """, unsafe_allow_html=True)
+
+        /* Tabel */
+        .stDataFrame, .stTable {
+            border: 1px solid #B00020;
+        }
+
+        /* Label di atas file uploader */
+        .st-emotion-cache-1fcbk6n {
+            font-weight: bold;
+            color: #B00020;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 custom_css()
 
