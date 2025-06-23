@@ -15,50 +15,51 @@ from sklearn.preprocessing import LabelEncoder
 def custom_css():
     st.markdown("""
         <style>
-            /* Ubah warna latar belakang keseluruhan */
-            .main {
-                background-color: #2D1B4E;
-                color: white;
-            }
-            /* Panel judul */
-            h1, h2, h3, h4, h5, h6 {
-                color: white;
-            }
-            /* Warna header section */
-            .st-emotion-cache-1v0mbdj {
-                background-color: #B00020;
-                color: white;
-                padding: 8px;
-                border-radius: 5px;
-            }
-            /* Box info */
-            .st-emotion-cache-1c7y2kd {
-                background-color: #FFEBEE !important;
-                color: black !important;
-            }
-            /* Tombol download */
-            .stDownloadButton button {
-                background-color: #B00020;
-                color: white;
-                border: none;
-                padding: 0.5em 1em;
-                border-radius: 5px;
-                font-weight: bold;
-            }
-            .stDownloadButton button:hover {
-                background-color: #D32F2F;
-            }
-            /* Dropdown selector */
-            .stSelectbox div[data-baseweb="select"] {
-                background-color: #fff;
-                color: black;
-            }
+        .stApp {
+            background-color: #2D1B4E;
+        }
+        h1, h2, h3, h4, .st-emotion-cache-10trblm, .st-emotion-cache-1avcm0n {
+            color: white !important;
+        }
+        .stDownloadButton > button {
+            background-color: #B00020;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+        .stDownloadButton > button:hover {
+            background-color: #D32F2F;
+            color: white;
+        }
+        .stDataFrame, .stTable, .element-container table {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+        }
+        .stFileUploader > div {
+            background-color: #ffffff;
+            color: #000;
+            border: 2px dashed #B00020;
+            border-radius: 10px;
+        }
+        .stAlert {
+            background-color: #f2f2f2;
+            color: black;
+        }
+        .css-1r6slb0, .css-1aumxhk {
+            background-color: #B00020 !important;
+            color: white !important;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 0.3em 0.8em;
+        }
         </style>
     """, unsafe_allow_html=True)
 
+custom_css()
+
 # Konfigurasi halaman
 st.set_page_config(page_title="Customer Churn App", layout="wide")
-custom_css()
 st.title("📊 Aplikasi Analisis Retensi Pelanggan")
 
 st.info("""
