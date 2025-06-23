@@ -284,3 +284,14 @@ if uploaded_file:
 
 else:
     st.info("Silakan upload file CSV terlebih dahulu untuk memulai analisis.")
+
+st.markdown(
+    """
+    <hr style='margin-top: 2em;'>
+    <div style='text-align: center; color: grey; font-size: 0.9em;'>
+        © 2025 Aqilah, Sun Kayla, Abida, Giselle, Adinda. Licensed under the 
+        <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
