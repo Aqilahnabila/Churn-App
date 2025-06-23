@@ -28,13 +28,12 @@ st.markdown("""
         font-weight: bold;
     }
 
-    /* Header langkah (misalnya 1️⃣ Upload Data Pelanggan) */
-    .st-emotion-cache-1v0mbdj h2 {
-        background-color: #b30000;
-        color: white;
-        padding: 0.5em;
-        border-radius: 5px;
-        font-size: 22px;
+    /* Header langkah */
+    h2 {
+        color: #b30000 !important;
+        font-weight: bold !important;
+        border-bottom: 2px solid #b30000;
+        padding-bottom: 0.2em;
     }
 
     /* Label dropdown */
@@ -57,6 +56,10 @@ st.markdown("""
         color: white;
         font-weight: bold;
         border-radius: 8px;
+    }
+
+    .stDownloadButton > button:hover {
+        background-color: #800000;
     }
 
     /* Selectbox (dropdown fitur) */
